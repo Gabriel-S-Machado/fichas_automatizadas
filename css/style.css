@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Cinzel:wght@500&family=Foldit:wght@100;300;400&family=Oswald:wght@200;300&family=Tilt+Prism&family=Ysabeau+SC:wght@1;100;200;300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: var(--cor-font-3);
+}
+
+:root {
+    --cor-1: rgb(0,0,0);
+    --cor-2: rgb(178, 8, 0);
+    --cor-3: rgb(206, 179, 48);
+    --cor-4: rgb(234, 234, 234);
+    --cor-font-1: rgb(129, 0, 0);
+    --cor-font-2: rgb(186, 159, 28);
+    --cor-font-3: rgb(181, 181, 181);
+    --cor-font-4: rgb(145, 145, 145);
+    --d-and-d: 'Cinzel', serif;
+    --font-1: 'Bebas Neue', sans-serif;
+    --font-2: 'Anton', sans-serif;
+    --font-3: 'Oswald', sans-serif; /*light 300*/
+    --font-4: 'Ysabeau SC', sans-serif; /*weight: 1*/
+    --borda-estilo-1: solid;
+    --borda-estilo-2: dotted;
+    --borda-estilo-3: dashed;
+    --borda-espessura-1: 6px;
+    --borda-espessura-2: 3px;
+    --borda-espessura-3: 1px;
+}
+
+body {
+    background-color: var(--cor-1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.lado_a_lado {
+    display: flex;
+    flex-direction: inline;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invertido {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cabecalho {
+    background-color: var(--cor-2);
+    border-bottom-width: var(--borda-espessura-1);
+    border-bottom-style: var(--borda-estilo-1);
+    border-bottom-color: var(--cor-4);
+    width: 100%;
+    height: 15vh;
+    padding: 3%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.principal {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+     }
+     
+     .principal__ficha__ {
+            display: flex;
+            flex-direction: column;
+            border-width: var(--borda-espessura-2);
+            border-style: var(--borda-estilo-1);
+            border-color: var(--cor-3);
+            background-color: var(--cor-2);
+             }
+             
+             .__ficha__cabecalho {
+                border-bottom-width: var(--borda-espessura-3);
+                border-bottom-style: var(--borda-estilo-1);
+                border-bottom-color: var(--cor-4);
+                 }
+                 
+                 .__ficha__cabecalho__sistema_usado {
+                    font-family: var(--d-and-d);
+                    /*margin-right: 2%; infuncional */
+                 }
+                 
+                 .__ficha__cabecalho__titulo {
+                    color: var(--cor-font-1);
+                    font-family: var(--font-1);
+                    margin-left: 2%;
+                 }
+                 
+                 .__ficha__cabecalho__explicacao {
+                    color: var(--cor-font-4);
+                    font-family: var(--font-4);
+                    font-weight: 1;
+                     }
+                     
+                     .__ficha__cabecalho__informacao_player {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: auto;
+                        margin: 2%;
+                     }
+                     
+                     .__ficha__cabecalho__informacao_player__titulo {
+                        font-style: var(--font-2);
+                        align-self: center;
+                        /*width: ;*/
+                     }
+                     
+                     .__ficha__cabecalho__informacao_player__nome{}
+                     .__ficha__cabecalho__informacao_player__input_nome{}
+                     .__ficha__cabecalho__informacao_player__level{}
+                     .__ficha__cabecalho__informacao_player__input_level{}
+                     
+                     .__ficha__cabecalho__informacao_player__raca {
+                        align-self: center;
+                     }
+                     
+                     .__ficha__cabecalho__informacao_player__input_raca{}
+            
+     .principal__area_de_criacao {
+        
+     }
+
+     .rodape {
+        background-color: var(--cor-2);
+        width: 100%;
+        height: 15vh;
+        padding: 3%;
+        border-top-width: var(--borda-espessura-1);
+        border-top-style: var(--borda-estilo-1);
+        border-top-color: var(--cor-4);
+        margin-top: 5%;
+     }
